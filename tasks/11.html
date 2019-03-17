@@ -13,6 +13,15 @@
         <main class="global-results">
             <style>
                 /* ваш код здесь... */
+                [value^="invalid"]{ 
+                    border: 3px solid #FF6698;
+                }
+                [value*="@"]{
+                    border: 3px solid #98FF66;
+                }
+                [value^="invalid"]:focus{
+                    border: 3px solid #6395FF;
+                }
             </style>
 
             <section class="global-result">
