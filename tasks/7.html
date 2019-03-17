@@ -13,6 +13,16 @@
         <main class="global-results">
             <style>
                 /* ваш код здесь... */
+                div:first-child ~ div:not(:last-child){
+                    opacity: 0.3;
+                }
+               /* можно сделать проще:
+               div:nth-child(2){
+                    opacity: 0.3;
+                }
+                div:nth-child(3){
+                    opacity: 0.3;
+                }*/
             </style>
 
             <section class="global-result">
