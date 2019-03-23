@@ -12,7 +12,27 @@
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
+                .global-scope > input:first-child{
+                    border: 3px solid #ff6698;
+                }
+                .global-scope > input:last-child{
+                    border: 3px solid #98ff66;
+                }
+                .global-scope > input:focus{
+                    border: 3px solid #6698ff;
+                }
+                /*Альтернативный вариант*/
+                /*
+                [value^="invalid"] {
+                    border: 3px solid #ff6698;
+                }
+                [value^="email"] {
+                    border: 3px solid #98ff66;
+                }
+                [value*="email"]:focus{
+                    border: 3px solid #6698ff;
+                }
+                */
             </style>
 
             <section class="global-result">
