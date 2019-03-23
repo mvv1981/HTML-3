@@ -12,7 +12,13 @@
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
+                input:checked ~ input {
+                    outline: 1px solid #ff6698;
+                }
+                /*Для отмены outline для 2-ого и т.д. checked (3 случай на картинке) */
+                input:checked  {
+                    outline: none!important;
+                }
             </style>
 
             <section class="global-result">
