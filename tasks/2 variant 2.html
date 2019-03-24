@@ -8,30 +8,28 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>outline: 1px solid #ff6698</code></p>
+        <p>Решите задачу, используя <code>background: &lt;color&gt;</code> и <code>border: 2px solid #000</code></p>
 
         <main class="global-results">
             <style>
-                input[type="checkbox"]:checked ~ input[type="checkbox"] {
-                    outline: 1px solid #ff6698;
+                div.c1 {
+                    border: 2px solid #000;
+                    background: #ff6698;
                 }
-                input[type="checkbox"]:checked {
-                    outline: 0px!important;
+                div.c2 {
+                    background: #ffb366;
+                }
+                div.c1.c2 {
+                    background: #6698ff;
                 }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
+                    <div class="c1 c2"></div>
+                    <div class="c1"></div>
+                    <div class="c2"></div>
+                    <div class="c1"></div>
                 </article>
             </section>
 

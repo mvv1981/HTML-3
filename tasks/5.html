@@ -12,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
+                /* так же не понял, нужно ли менять цвет внутри самого чек-бокса, посмотрел что через :after и display: none 
+                 подумал что для 5 задания это перебор. Если точно надо то сделаю*/
+                input:checked ~ div {   
+                    background: black;
+                    color: white
+                }
             </style>
 
             <section class="global-result">
